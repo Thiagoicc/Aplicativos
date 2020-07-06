@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="br.unifor.cct.bluepocket">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/bluepocketquadrado"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/icone_redondo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activity.Mensal.DemonMensalView"
+            android:theme="@style/SplashScreenTheme"
+            />
+        <activity
+            android:name=".activity.Mensal.DemonstrativoMensal"
+            android:theme="@style/SplashScreenTheme" />
+        <activity
+            android:name=".activity.Receita.ListarReceita"
+            android:theme="@style/SplashScreenTheme" />
+        <activity
+            android:name=".activity.Despesa.ListarDespesa"
+            android:theme="@style/SplashScreenTheme" />
+        <activity
+            android:name=".activity.Despesa.DespesaCadastro"
+            android:theme="@style/SplashScreenTheme" />
+        <activity
+            android:name=".activity.Tipo.TipoCadastro"
+            android:theme="@style/SplashScreenTheme" />
+        <activity
+            android:name=".activity.Login.TrocadeSenha"
+            android:theme="@style/SplashScreenTheme" />
+        <activity
+            android:name=".activity.Receita.ReceitaCadastro"
+            android:theme="@style/SplashScreenTheme" />
+        <activity
+            android:name=".activity.Login.RegisterActivity"
+            android:theme="@style/SplashScreenTheme" />
+        <activity
+            android:name=".activity.Login.LoginActivity"
+            android:theme="@style/SplashScreenTheme" />
+        <activity
+            android:name=".activity.Login.SplashScreenActivity"
+            android:theme="@style/SplashScreenTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.MainActivity"
+            android:theme="@style/SplashScreenTheme" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

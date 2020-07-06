@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".activity.MainActivity">
+
+    <View
+        android:id="@+id/main_view_barraPrincipal"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:background="@color/background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/main_imageButton_voltar"
+        android:layout_width="36dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginLeft="6dp"
+        android:background="@color/background"
+        app:layout_constraintBottom_toBottomOf="@+id/main_view_barraPrincipal"
+        app:layout_constraintStart_toStartOf="@+id/main_view_barraPrincipal"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/seta" />
+
+    <TextView
+        android:id="@+id/main_textView_titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/alfa_slab_one"
+        android:text="@string/textView_titulo"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/main_view_barraPrincipal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/main_view_barraPrincipal" />
+
+    <TextView
+        android:id="@+id/main_textView_clickable_sair"
+        android:layout_width="45dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:clickable="true"
+        android:cursorVisible="false"
+        android:focusable="true"
+        android:gravity="center"
+        android:text="@string/textView_clickable_sair"
+        android:textSize="16sp"
+        app:autoSizeTextType="none"
+        app:layout_constraintBottom_toBottomOf="@+id/main_view_barraPrincipal"
+        app:layout_constraintEnd_toEndOf="@+id/main_view_barraPrincipal"
+        app:layout_constraintTop_toTopOf="@+id/main_view_barraPrincipal"
+        tools:ignore="TextViewEdits" />
+
+    <View
+        android:id="@+id/main_view_barraUsuario"
+        android:layout_width="0dp"
+        android:layout_height="28dp"
+        android:background="@color/userBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main_view_barraPrincipal" />
+
+    <TextView
+        android:id="@+id/main_textView_usuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:text="@string/textView_usuario"
+        app:layout_constraintBottom_toBottomOf="@+id/main_view_barraUsuario"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main_view_barraPrincipal"
+        app:layout_constraintVertical_bias="0.444" />
+
+    <TextView
+        android:id="@+id/main_textView_usuarioUnico"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/main_view_barraUsuario"
+        app:layout_constraintStart_toEndOf="@+id/main_textView_usuario"
+        app:layout_constraintTop_toBottomOf="@+id/main_view_barraPrincipal" />
+
+    <View
+        android:id="@+id/main_view_principal"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main_view_barraUsuario" />
+
+    <ImageButton
+        android:id="@+id/main_imageButton_cadReceita"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="42dp"
+        android:layout_marginLeft="42dp"
+        android:layout_marginTop="12dp"
+        android:background="#FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main_view_barraUsuario"
+        app:srcCompat="@drawable/icone_dinheiro" />
+
+    <TextView
+        android:id="@+id/main_textView_cadReceita"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/textView_cadReceita"
+        app:layout_constraintEnd_toEndOf="@+id/main_imageButton_cadReceita"
+        app:layout_constraintStart_toStartOf="@+id/main_imageButton_cadReceita"
+        app:layout_constraintTop_toBottomOf="@+id/main_imageButton_cadReceita" />
+
+    <ImageButton
+        android:id="@+id/main_imageButton_cadDespesa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="42dp"
+        android:layout_marginRight="42dp"
+        android:background="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main_view_barraUsuario"
+        app:srcCompat="@drawable/icone_dinheiro20" />
+
+    <TextView
+        android:id="@+id/main_textView_cadDespesa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/textView_cadDespesa"
+        app:layout_constraintEnd_toEndOf="@+id/main_imageButton_cadDespesa"
+        app:layout_constraintStart_toStartOf="@+id/main_imageButton_cadDespesa"
+        app:layout_constraintTop_toBottomOf="@+id/main_imageButton_cadDespesa" />
+
+    <ImageButton
+        android:id="@+id/main_imageButton_cadTipo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="42dp"
+        android:layout_marginLeft="42dp"
+        android:layout_marginTop="8dp"
+        android:background="#FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main_textView_cadReceita"
+        app:srcCompat="@drawable/icone_dinheiro_4" />
+
+    <TextView
+        android:id="@+id/main_textView_cadTipo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/textView_cadTipo"
+        app:layout_constraintEnd_toEndOf="@+id/main_imageButton_cadTipo"
+        app:layout_constraintStart_toStartOf="@+id/main_imageButton_cadTipo"
+        app:layout_constraintTop_toBottomOf="@+id/main_imageButton_cadTipo" />
+
+    <ImageButton
+        android:id="@+id/main_imageButton_lisReceita"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="42dp"
+        android:layout_marginRight="42dp"
+        android:background="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main_textView_cadDespesa"
+        app:srcCompat="@drawable/icone_dinheiro_8" />
+
+    <TextView
+        android:id="@+id/main_textView_lisReceitas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/textView_lisReceitas"
+        app:layout_constraintEnd_toEndOf="@+id/main_imageButton_lisReceita"
+        app:layout_constraintStart_toStartOf="@+id/main_imageButton_lisReceita"
+        app:layout_constraintTop_toBottomOf="@+id/main_imageButton_lisReceita" />
+
+    <ImageButton
+        android:id="@+id/main_imageButton_lisDespesas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="42dp"
+        android:layout_marginLeft="42dp"
+        android:layout_marginTop="8dp"
+        android:background="#FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main_textView_cadTipo"
+        app:srcCompat="@drawable/icone_dinheiro_6" />
+
+    <TextView
+        android:id="@+id/main_textView_lisDespesas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/textView_lisDespesas"
+        app:layout_constraintEnd_toEndOf="@+id/main_imageButton_lisDespesas"
+        app:layout_constraintStart_toStartOf="@+id/main_imageButton_lisDespesas"
+        app:layout_constraintTop_toBottomOf="@+id/main_imageButton_lisDespesas" />
+
+    <ImageButton
+        android:id="@+id/main_imageButton_grafRecDes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="42dp"
+        android:layout_marginRight="42dp"
+        android:background="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main_textView_lisReceitas"
+        app:srcCompat="@drawable/icone_dinheiro_9" />
+
+    <TextView
+        android:id="@+id/main_textView_grafRecDes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/textView_grafRecDes"
+        app:layout_constraintEnd_toEndOf="@+id/main_imageButton_grafRecDes"
+        app:layout_constraintStart_toStartOf="@+id/main_imageButton_grafRecDes"
+        app:layout_constraintTop_toBottomOf="@+id/main_imageButton_grafRecDes" />
+
+    <ImageButton
+        android:id="@+id/main_imageButton_demoMensal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main_textView_lisDespesas"
+        app:srcCompat="@drawable/icone_dinheiro_10" />
+
+    <TextView
+        android:id="@+id/main_textView_demoMensal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/textView_demoMensal"
+        app:layout_constraintEnd_toEndOf="@+id/main_imageButton_demoMensal"
+        app:layout_constraintStart_toStartOf="@+id/main_imageButton_demoMensal"
+        app:layout_constraintTop_toBottomOf="@+id/main_imageButton_demoMensal" />
+
+    <TextView
+        android:id="@+id/Main_textView_usuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="@+id/main_view_barraUsuario"
+        app:layout_constraintEnd_toEndOf="@+id/main_view_barraUsuario"
+        app:layout_constraintHorizontal_bias="0.026"
+        app:layout_constraintStart_toEndOf="@+id/main_textView_usuario"
+        app:layout_constraintTop_toBottomOf="@+id/main_view_barraPrincipal"
+        app:layout_constraintVertical_bias="0.444" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
